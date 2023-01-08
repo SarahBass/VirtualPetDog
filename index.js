@@ -198,7 +198,7 @@ clock.ontick = (evt) => {
                    else{dog.image = "dog/dog0fart.png";}}
                  
                  else if (parseInt(mins/10) == 0 ){ 
-                                      if (seconds % 2 == 0){dog.image = "dog/dog0sideeye.png";}
+                                      if (seconds % 2 == 0){dog.image = "dog/dog0happy3.png";}
                    else{dog.image = "dog/dog0fart.png";}}
         }else
           if ( parseInt(mins/10) == 1 ){
@@ -226,7 +226,7 @@ clock.ontick = (evt) => {
                  
                  else if (parseInt(mins/10) == 0 ){ 
                                       if (seconds % 2 == 0){dog.image = "dog/dog0sad1.png";}
-                   else{dog.image = "dog/dog0fart.png";}}
+                   else{dog.image = "dog/dog0happy1.png";}}
                                 
                               }
          else if ((util.zeroPad(hours) >= 13) && (util.zeroPad(hours) < 19 )){
