@@ -146,7 +146,7 @@ clock.ontick = (evt) => {
                       if (seconds % 2 == 0){dog.image = "dog/dog2start.png";}
                       else{dog.image = "dog/dog2breath0.png";}}
                     else if (parseInt(mins/10) == 0 ){ 
-                      if (seconds % 2 == 0){dog.image = "dog/dog2happy1.png";}
+                      if (seconds % 2 == 0){dog.image = "dog/dog2breath1.png";}
                       else{dog.image = "dog/dog2happy0.png";}}
               }else 
                     if ( parseInt(mins/10) == 1 ){
@@ -178,28 +178,28 @@ clock.ontick = (evt) => {
                    if (seconds % 2 == 0){dog.image = "dog/dog0start.png";}
                    else{dog.image = "dog/dog0happy0.png";}}
                  else if (parseInt(mins/10) == 2 ){
-                   if (seconds % 2 == 0){dog.image = "dog/dog0start.png";}
-                   else{dog.image = "dog/dog0happy1.png";}}
+                   if (seconds % 2 == 0){dog.image = "dog/dog0fart.png";}
+                   else{dog.image = "dog/dog0happy2.png";}}
                                      
                  else if ( parseInt(mins/10) == 3 ){
-                   if (seconds % 2 == 0){dog.image = "dog/dog0start.png";}
-                   else{dog.image = "dog/dog0happy2.png";}} 
+                   if (seconds % 2 == 0){dog.image = "dog/dog0happy2.png";}
+                   else{dog.image = "dog/dog0happy1.png";}} 
                  
                  else if (parseInt(mins/10) == 4 ){ 
                                       if (seconds % 2 == 0){dog.image = "dog/dog0start.png";}
                    else{dog.image = "dog/dog0happy3.png";}}
                  
                  else if (parseInt(mins/10) == 5 ){
-                                    if (seconds % 2 == 0){dog.image = "dog/dog0happy3.png";}
+                                    if (seconds % 2 == 0){dog.image = "dog/dog0happy2.png";}
                    else{dog.image = "dog/dog0happy4.png";}}
 
                  else if (parseInt(mins/10) == 6 ){ 
                                       if (seconds % 2 == 0){dog.image = "dog/dog0start.png";}
-                   else{dog.image = "dog/dog0fart.png";}}
+                   else{dog.image = "dog/dog0happy4.png";}}
                  
                  else if (parseInt(mins/10) == 0 ){ 
-                                      if (seconds % 2 == 0){dog.image = "dog/dog0happy3.png";}
-                   else{dog.image = "dog/dog0fart.png";}}
+                                      if (seconds % 2 == 0){dog.image = "dog/dog0sit0.png";}
+                   else{dog.image = "dog/dog0sit1.png";}}
         }else
           if ( parseInt(mins/10) == 1 ){
                    if (seconds % 2 == 0){dog.image = "dog/dog0start.png";}
@@ -226,7 +226,7 @@ clock.ontick = (evt) => {
                  
                  else if (parseInt(mins/10) == 0 ){ 
                                       if (seconds % 2 == 0){dog.image = "dog/dog0sad1.png";}
-                   else{dog.image = "dog/dog0happy1.png";}}
+                   else{dog.image = "dog/dog0fart.png";}}
                                 
                               }
          else if ((util.zeroPad(hours) >= 13) && (util.zeroPad(hours) < 19 )){
@@ -288,7 +288,9 @@ clock.ontick = (evt) => {
                    else{dog.image = "dog/dog1fart.png";}}
                                 
                               }
-                                 else {dog.image = "dog/dog2start.png" ;
+                                 else {
+                      if (seconds % 2 == 0){dog.image = "dog/dog2start.png";}
+                      else{dog.image = "dog/dog2happy0.png";}
                                        background.image = "greenbg.jpeg"; 
                                       monthobject.image="blank.png";}
   
