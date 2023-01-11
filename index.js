@@ -118,7 +118,7 @@ clock.ontick = (evt) => {
   else if ((userActivity.adjusted.steps < goals.steps)&& (userActivity.adjusted.steps > ((goals.steps*4)/5)))
            {hearts.image = "hearts/heart4.png";}
   else if (userActivity.adjusted.steps > goals.steps){hearts.image = "hearts/heart5.png";}
-  else {hearts.image = blank.png}
+  else {hearts.image = "blank.png"}
   
   //Change Foreground
                 if (((util.zeroPad(hours) >= 0) && (util.zeroPad(hours) < 6)) || (util.zeroPad(hours) >= 19)){ 
@@ -249,22 +249,22 @@ clock.ontick = (evt) => {
                    else{dog.image = "dog/dog1happy3.png";}}
                  
                  else if (parseInt(mins/10) == 5 ){
-                                    if (seconds % 2 == 0){dog.image = "dog/dog1happy3.png";}
-                   else{dog.image = "dog/dog1happy4.png";}}
+                                    if (seconds % 2 == 0){dog.image = "dog/dog1happy1.png";}
+                   else{dog.image = "dog/dog1happy2.png";}}
 
                  else if (parseInt(mins/10) == 6 ){ 
-                                      if (seconds % 2 == 0){dog.image = "dog/dog1start.png";}
-                   else{dog.image = "dog/dog1fart.png";}}
+                   if (seconds % 2 == 0){dog.image = "dog/dog1sidehappy1.png";}
+                   else{dog.image = "dog/dog1sidehappy2.png";}}
                  
                  else if (parseInt(mins/10) == 0 ){ 
-                                      if (seconds % 2 == 0){dog.image = "dog/dog1happy1.png";}
-                   else{dog.image = "dog/dog1fart.png";}}
+                                      if (seconds % 2 == 0){dog.image = "dog/dog1sidehappy1.png";}
+                   else{dog.image = "dog/dog1sidehappy2.png";}}
         }else
           if ( parseInt(mins/10) == 1 ){
-                   if (seconds % 2 == 0){dog.image = "dog/dog1start.png";}
+                   if (seconds % 2 == 0){dog.image = "dog/dog1sad1.png";}
                    else{dog.image = "dog/dog1sad0.png";}}
                  else if (parseInt(mins/10) == 2 ){
-                   if (seconds % 2 == 0){dog.image = "dog/dog1start.png";}
+                   if (seconds % 2 == 0){dog.image = "dog/dog1sad0.png";}
                    else{dog.image = "dog/dog1sad1.png";}}
                                      
                  else if ( parseInt(mins/10) == 3 ){
@@ -280,12 +280,12 @@ clock.ontick = (evt) => {
                    else{dog.image = "dog/dog1sad4.png";}}
 
                  else if (parseInt(mins/10) == 6 ){ 
-                                      if (seconds % 2 == 0){dog.image = "dog/dog1sad2.png";}
-                   else{dog.image = "dog/dog1sad3.png";}}
+                                      if (seconds % 2 == 0){dog.image = "dog/dog1start.png";}
+                   else{dog.image = "dog/dog1sad0.png";}}
                  
                  else if (parseInt(mins/10) == 0 ){ 
-                                      if (seconds % 2 == 0){dog.image = "dog/dog1sad1.png";}
-                   else{dog.image = "dog/dog1fart.png";}}
+                                      if (seconds % 2 == 0){dog.image = "dog/dog1sidesad1.png";}
+                   else{dog.image = "dog/dog1sidesad2.png";}}
                                 
                               }
                                  else {
